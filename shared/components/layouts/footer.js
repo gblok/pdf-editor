@@ -1,0 +1,1 @@
+export default ({description}) => <footer>{description}</footer>

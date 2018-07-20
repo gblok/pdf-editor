@@ -1,0 +1,25 @@
+{
+  "restartable": "rs",
+  "verbose": true,
+  "watchInterval": 10000,
+  "events": {
+    "restart": "Server restart..."
+  },
+  "ignore": [
+    "static",
+    "src",
+    "tmp"
+  ],
+  "watch": [
+    "server",
+    "shared"
+  ],
+  "env": {
+    "NODE_ENV": "development",
+    "DEBUG": true
+  },
+  "ext": "js",
+  "execMap": {
+    "js": "node"
+  }
+}

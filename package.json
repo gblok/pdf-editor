@@ -1,0 +1,74 @@
+{
+  "name": "pdf-editor",
+  "version": "0.0.0-alpha.1",
+  "private": true,
+  "dependencies": {
+    "cors": "",
+    "eventemitter3": "",
+    "fastify": "",
+    "fastify-static": "",
+    "html2canvas": "",
+    "inferno": "",
+    "inferno-server": "",
+    "lokijs": "",
+    "most": "",
+    "pdfjs": "",
+    "quill": "^v2.0.0-dev.0",
+    "superagent": "",
+    "zousan": ""
+  },
+  "devDependencies": {
+    "babel-core": "",
+    "babel-loader": "",
+    "babel-plugin-inferno": "",
+    "babel-plugin-syntax-dynamic-import": "",
+    "babel-plugin-transform-class-properties": "",
+    "babel-plugin-transform-object-rest-spread": "",
+    "babel-preset-env": "",
+    "babel-register": "",
+    "nodemon": "",
+    "webpack": "",
+    "webpack-cli": "",
+    "webpack-dev-server": "",
+    "style-loader": "",
+    "css-loader": "",
+    "file-loader": "",
+    "imagemin-mozjpeg": "",
+    "imagemin-webpack-plugin": "",
+    "less": "",
+    "less-loader": "",
+    "less-plugin-autoprefix": "",
+    "less-plugin-clean-css": ""
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "syntax-dynamic-import",
+      "transform-class-properties",
+      "transform-object-rest-spread",
+      [
+        "inferno",
+        {
+          "imports": true
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "pm2": "pm2 start .etc/pm2.yml",
+    "raw": "babel-node server/index.js",
+    "api": "nodemon --config .etc/api.json .etc/server.js",
+    "client": "webpack-dev-server --config .etc/webpack/client.babel.js",
+    "prod": "webpack --config .etc/webpack/prod.babel.js",
+    "dll": "webpack --config .etc/webpack/dll.babel.js"
+  }
+}

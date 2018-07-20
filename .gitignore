@@ -1,0 +1,12 @@
+.idea
+reports
+node_modules
+logs
+coverage
+static/assets
+tmp
+zz
+db
+*.key
+stat.json
+package-lock.json

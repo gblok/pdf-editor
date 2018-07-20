@@ -1,0 +1,117 @@
+/*  Responsive
+-------------------------------------------------- */
+@breakMobile: 480px;
+@breakTablet: 768px;
+@breakDesktop: 992px;
+@breakLarge: 1300px;
+@breakWide: 1920px;
+
+@breakPureMax: (@breakMobile  - 1px);
+@breakMobileMax: (@breakTablet  - 1px);
+@breakTabletMax: (@breakDesktop - 1px);
+@breakDesktopMax: (@breakLarge   - 1px);
+@breakLargeMax: (@breakWide    - 1px);
+
+@maxWidth: 75rem;
+@marginTop:  5rem;
+
+@pure: ~'only screen and (max-width: @{breakPureMax})';
+@mobile: ~'only screen and (min-width: @{breakMobile}) and (max-width: @{breakMobileMax})';
+@tablet: ~'only screen and (min-width: @{breakTablet}) and (max-width: @{breakTabletMax})';
+@desktop: ~'only screen and (min-width: @{breakDesktop}) and (max-width: @{breakDesktopMax})';
+@large: ~'only screen and (min-width: @{breakLarge}) and (max-width: @{breakLargeMax})';
+@wide: ~'only screen and (min-width: @{breakWide})';
+
+@alongMobile: ~'only screen and (max-width: @{breakMobileMax})';
+@alongTablet: ~'only screen and (max-width: @{breakTabletMax})';
+@alongDesktop: ~'only screen and (max-width: @{breakDesktopMax})';
+@alongLarge: ~'only screen and (max-width: @{breakLargeMax})';
+
+@largestPure: ~'only screen and (min-width: @{breakPureMax})';
+@largestMobile: ~'only screen and (min-width: @{breakTablet})';
+@largestTablet: ~'only screen and (min-width: @{breakDesktop})';
+@largestDesktop: ~'only screen and (min-width: @{breakLarge})';
+
+/*  Font
+-------------------------------------------------- */
+
+@mainFont: 'Roboto';
+
+@pageFont: @mainFont, Helvetica, 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+@monoFont: Monaco, Menlo, Consolas, 'Courier New', monospace;
+
+@headerFont: @pageFont;
+@formFont: @pageFont;
+@buttonFont: @pageFont;
+
+//@fontSize: .8125rem/13px;
+
+/*  Page
+-------------------------------------------------- */
+@pageFontFamily: @pageFont;
+@pageLineHeight: 1.5;
+
+@pageFontSize: 14px;
+@pageFontWeight: normal;
+@pageFontSmoothing: antialiased;
+
+//@pageBackgroundColor: #F0F0F0;
+@pageBackgroundColor: #F0F0F0;
+@pageColor: #444;
+@pageColorInvert: #fff;
+
+/*  Grid
+-------------------------------------------------- */
+
+@cols: 12;
+
+/*  Headers
+-------------------------------------------------- */
+
+@headerFontWeight: normal;
+@headerFontWeight: 300;
+@headrerLineHeight: normal;
+
+@h1: 1.75rem;
+@h2: 1.5rem;
+@h3: 1.25rem;
+@h4: 1rem;
+@h5: 1rem;
+@h6: 1rem;
+
+/*  Paragraph
+-------------------------------------------------- */
+
+@paragraphMargin: 1.5rem;
+@paragraphLineHeight: @pageLineHeight;
+
+@borderRadius: 2px;
+
+/*  Color
+-------------------------------------------------- */
+@b1: #EE8208;
+@b2: #fda714;
+@b3: #f38000;
+@b4: #BF6602;
+
+@green: rgba(67, 181, 129, 1);
+@red: rgba(240, 71, 71, 1);
+@blue: rgba(114, 137, 218, 1);
+@yellow: rgba(250, 166, 26, 1);
+@gray: rgba(66, 70, 77, 1);
+
+@invalid: @red;
+@valid: @green;
+@warning: @yellow;
+@normal: @blue;
+
+@link: #054661;
+
+/*  Link
+/*  Link
+-------------------------------------------------- */
+
+@linkColor: @link;
+@linkColorHover: darken(@link, 20%);
+@linkUnderline: none;
+@linkUnderlineHover: none;

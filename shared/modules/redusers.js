@@ -1,0 +1,1 @@
+export const duty = tx => doc => doc
